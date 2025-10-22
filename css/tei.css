@@ -1,0 +1,53 @@
+
+body {
+    font-family: jura, Times, serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;      
+
+    
+    box-sizing: border-box;
+    padding-block: 6rem; 
+    padding-inline: clamp(10rem, 15vw, 10rem);
+
+   
+    background-image: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDYwd2g3bmtrbTN0YWMyNWpxZm1vOGprOG16ZnczMmh5bjAzY2lwNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LRHiRGB4J56NlBosbO/giphy.gif");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+
+
+    color: #ffffff;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+}
+
+
+tei-sp[lang="spa"] { font-size: 15px; }
+
+tei-sp[lang="eng"],
+tei-stage[lang="eng"] {
+    color: #002366;
+}
+
+tei-stage[lang="spa"] { color: green; }
+tei-stage[lang="eng"] { color: brown; }
+
+
+tei-stage, tei-sp, tei-author, tei-speaker {
+    width: auto;
+    display: inline-block;
+    text-align: center;
+}
+
+tei-author {
+    color: aquamarine;
+}
+tei-speaker { display: block;
+font-variant: small-caps;
+color: blueviolet;}
+tei-stage [lang= "spa"] {color: green;}
+tei-stage [lang= "eng" ] {color: brown;}
