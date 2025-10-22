@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/nivaca/hamleodd/refs/heads/main/tei_sp.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/nivaca/hamleodd/refs/heads/main/tei_sp.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Hamlet — Act III, Scene I </title>
+        <author>William Shakespeare</author>
+      </titleStmt>
+      <publicationStmt>
+        <p>Trabajo de clase — Codificación TEI </p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Fuente: Shakespeare, Hamlet (Act III, Scene I). </p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+
+  <text>
+    <front>
+      <div type="DramatisPersonae">
+        <head>The Persons Represented</head>
+        <castList>
+          <castItem xml:id="claudius">
+            <role>King Claudius</role>
+            <roleDesc>of Denmark, brother of the late King</roleDesc>
+          </castItem>
+          <castItem xml:id="gertrude">
+            <role>Queen Gertrude</role>
+            <roleDesc>Hamlet’s mother and widow of the late King</roleDesc>
+          </castItem>
+          <castItem xml:id="polonius">
+            <role>Polonius</role>
+            <roleDesc>King Claudius' councillor</roleDesc>
+          </castItem>
+          <castItem xml:id="ophelia">
+            <role>Ophelia</role>
+            <roleDesc>Polonius' daughter</roleDesc>
+          </castItem>
+          <castItem xml:id="rosencrantz">
+            <role>Rosencrantz</role>
+            <roleDesc>fellow student of Hamlet</roleDesc>
+          </castItem>
+          <castItem xml:id="guildenstern">
+            <role>Guildenstern</role>
+            <roleDesc>fellow student of Hamlet</roleDesc>
+          </castItem>
+          <castItem xml:id="hamlet">
+            <role>Hamlet</role>
+            <roleDesc>Prince of Denmark</roleDesc>
+          </castItem>
+          <castItem xml:id="lords">
+            <role>Lords</role>
+          </castItem>
+        </castList>
+      </div>
+    </front>
+    <body>
+
+     <div type="acto" n="3"></div>
+      <div type="scene" n="1">
+
+        <stage xml:lang="eng" xml:id="ls001xq_eng" corresp="#ls001xq_spa">
+          Enter King Claudius, Queen Gertrude, Polonius, Ophelia, Rosencrantz, Guildenstern, Lords.
+        </stage>
+        <stage xml:lang="spa" xml:id="ls001xq_spa" corresp="#ls001xq_eng">
+          [Entra Rey, Reina, Polonio, Ofelia, Rosencrantz, Guildenstern, Lords.]
+        </stage>
+
+        <sp who="#claudius" xml:lang="eng" xml:id="ls002xq_eng" corresp="#ls002xq_spa">
+          <speaker>King Claudius</speaker>
+          <lg>
+            <l>And can you by no drift of 
+                <app>
+                    <lem>conference</lem>
+                    <rdg wit="#F1" type="variation-substance">circumstance</rdg>
+                </app>
+            </l>
+            <l>Get from him why he puts on this confusion,</l>
+            <l>Grating so harshly all his days of quiet</l>
+            <l>With turbulent and dangerous lunacy?</l>
+          </lg>
+        </sp>
+        <sp who="#claudius" xml:lang="spa" xml:id="ls002xq_spa" corresp="#ls002xq_eng">
+          <speaker>Rey Claudio</speaker>
+          <lg>
+            <l>¿Y no puede, de alguna forma</l>
+            <l>Averiguar por qué se comporta de esta manera tan confusa,</l>
+            <l>Rompiendo tan bruscamente todos sus días de tranquilidad</l>
+            <l>Con una locura turbulenta y peligrosa?</l>
+          </lg>
+        </sp>
+
+        <sp who="#rosencrantz" xml:lang="eng" xml:id="ls003xq_eng" corresp="#ls003xq_spa">
+          <speaker>Rosencrantz</speaker>
+            <l>He does confess he feels himself distracted,</l>
+           <l>But from what cause, 
+                <app>
+                    <lem>a'</lem>
+                    <rdg wit="#F1" type="variation-substance">he</rdg>
+                </app>
+                will by no means speak.
+            </l>
+        </sp>
+        <sp who="#rosencrantz" xml:lang="spa" xml:id="ls003xq_spa" corresp="#ls003xq_eng">
+          <speaker>Rosencrantz</speaker>
+          <lg>
+            <l>El mismo admite que se siente perturbado,</l>
+            <l>Pero el motivo, no lo dirá bajo ningún concepto</l>
+          </lg>
+        </sp>
+
+        <sp who="#guildenstern" xml:lang="eng" xml:id="ls004xq_eng" corresp="#ls004xq_spa">
+          <speaker>Guildenstern</speaker>
+          <lg>
+            <l>Nor do we find him forward to be sounded,</l>
+            <l>But with a crafty madness keeps aloof</l>
+            <l>When we would bring him on to some confession</l>
+            <l>Of his true state.</l>
+          </lg>
+        </sp>
+        <sp who="#guildenstern" xml:lang="spa" xml:id="ls004xq_spa" corresp="#ls004xq_eng">
+          <speaker>Guildenstern</speaker>
+          <lg>
+            <l>Tampoco lo hemos encontrado dispuesto a abrirse,</l>
+            <l>Pero con una astuta locura se mantiene al margen</l>
+            <l>Cuando queremos llevarlo a confesar</l>
+            <l>Sobre su verdadero estado.</l>
+          </lg>
+        </sp>
+        <sp who="#gertrude" xml:lang="eng" xml:id="ls005xq_eng" corresp="#ls005xq_spa">
+          <speaker>Queen Gertrude</speaker>
+          <l>Did he receive you well?</l>
+        </sp>
+        <sp who="#gertrude" xml:lang="spa" xml:id="ls005xq_spa" corresp="#ls005xq_eng">
+          <speaker>Reina Gertrudis</speaker>
+          <l>¿El te ha recibido bien?</l>
+        </sp>
+
+        <sp who="#rosencrantz" xml:lang="eng" xml:id="ls006xq_eng" corresp="#ls006xq_spa">
+          <speaker>Rosencrantz</speaker>
+          <l>Most like a gentleman.</l>
+        </sp>
+        <sp who="#rosencrantz" xml:lang="spa" xml:id="ls006xq_spa" corresp="#ls006xq_eng">
+          <speaker>Rosencrantz</speaker>
+          <l>Como un caballero.</l>
+        </sp>
+
+        <sp who="#guildenstern" xml:lang="eng" xml:id="ls007xq_eng" corresp="#ls007xq_spa">
+          <speaker>Guildenstern</speaker>
+          <lg>
+            <l>But with much forcing of his disposition.</l>
+          </lg>
+        </sp>
+        <sp who="#guildenstern" xml:lang="spa" xml:id="ls007xq_spa" corresp="#ls007xq_eng">
+          <speaker>Guildenstern</speaker>
+          <lg>
+            <l>Pero con mucho forcejeo por su parte</l>
+          </lg>
+        </sp>
+
+        <sp who="#rosencrantz" xml:lang="eng" xml:id="ls008xq_eng" corresp="#ls008xq_spa">
+          <speaker>Rosencrantz</speaker>
+          <lg>
+            <l>Niggard of question, but of our demands</l>
+            <l>Most free in his reply.</l>
+          </lg>
+        </sp>
+        <sp who="#rosencrantz" xml:lang="spa" xml:id="ls008xq_spa" corresp="#ls008xq_eng">
+          <speaker>Rosencrantz</speaker>
+          <lg>
+            <l>Avaro en preguntas, pero generoso en nuestras demandas</l>
+          </lg>
+        </sp>
+
+        <sp who="#gertrude" xml:lang="eng" xml:id="ls009xq_eng" corresp="#ls009xq_spa">
+          <speaker>Queen Gertrude</speaker>
+          <l>Did you assay him to any pastime?</l>
+        </sp>
+        <sp who="#gertrude" xml:lang="spa" xml:id="ls009xq_spa" corresp="#ls009xq_eng">
+          <speaker>Reina Gertrudis</speaker>
+          <l>¿Le has propuesto algún pasatiempo?</l>
+        </sp>
+
+        <sp who="#rosencrantz" xml:lang="eng" xml:id="ls010xq_eng" corresp="#ls010xq_spa">
+          <speaker>Rosencrantz</speaker>
+          <lg>
+            <l>Madam, it so fell out that certain players</l>
+            <l>We o’er-raught on the way: of these we told him,</l>
+            <l>And there did seem in him a kind of joy</l>
+            <l>To hear of it. They are <app>
+              <lem>Here</lem>
+              <rdg wit="#F1" type="variation-absent"/> </app> 
+              about the court,</l>
+            <l>And, as I think, they have already order</l>
+            <l>This night to play before him.</l>
+          </lg>
+        </sp>
+        <sp who="#rosencrantz" xml:lang="spa" xml:id="ls010xq_spa" corresp="#ls010xq_eng">
+          <speaker>Rosencrantz</speaker>
+          <lg>
+            <l>Mi señora, sucedió que ciertos artistas</l>
+            <l>Se nos atravesaron en el camino. De esto mismo le hablamos,</l>
+            <l>Y pareció sentir una especie de alegria</l>
+            <l>Al oirlo.  Están aquí por la corte.</l>
+            <l>Y, según creo, ya han ordenado</l>
+            <l>Que esta noche actúen en ella.</l>
+          </lg>
+        </sp>
+
+        <sp who="#polonius" xml:lang="eng" xml:id="ls011xq_eng" corresp="#ls011xq_spa">
+          <speaker>Polonius</speaker>
+          <lg>
+            <l>’Tis most true:</l>
+            <l>And he beseech’d me to entreat your Majesties</l>
+            <l>To hear and see the matter.</l>
+          </lg>
+        </sp>
+        <sp who="#polonius" xml:lang="spa" xml:id="ls011xq_spa" corresp="#ls011xq_eng">
+          <speaker>Polonio</speaker>
+          <lg>
+            <l>Esto es cierto,</l>
+            <l>Y el me rogó que suplicara a sus majestades</l>
+            <l>Que escucharan y vieran el asunto.</l>
+          </lg>
+        </sp>
+        <sp who="#claudius" xml:lang="eng" xml:id="ls012xq_eng" corresp="#ls012xq_spa">
+          <speaker>King Claudius</speaker>
+          <lg>
+            <l>With all my heart, and it doth much content me</l>
+            <l>To hear him so inclin'd. Good gentlemen, give him a further edge,</l>
+            <l>And drive his purpose on to these delights.</l>
+          </lg>
+        </sp>
+        <sp who="#claudius" xml:lang="spa" xml:id="ls012xq_spa" corresp="#ls012xq_eng">
+          <speaker>Rey Claudio</speaker>
+          <lg>
+            <l>Con todo mi corazón, y me complace mucho</l>
+            <l>Oirle tan dispuesto.</l>
+            <l>Buenos caballeros, denle una ventaja adicional,</l>
+            <l>Y lleven su propósito a estas delicias.</l>
+          </lg>
+        </sp>
+
+        <sp who="#rosencrantz" xml:lang="eng" xml:id="ls013xq_eng" corresp="#ls013xq_spa">
+          <speaker>Rosencrantz</speaker>
+          <l>We shall, my lord.</l>
+        </sp>
+        <sp who="#rosencrantz" xml:lang="spa" xml:id="ls013xq_spa" corresp="#ls013xq_eng">
+          <speaker>Rosencrantz</speaker>
+          <l>Así lo haremos, mi lord.</l>
+        </sp>
+
+        <stage xml:lang="eng" xml:id="ls014xq_eng" corresp="#ls014xq_spa">
+          Exeunt 
+          <app>
+            <lem>Rosencrantz and Guildenstern.</lem>
+            <rdg wit="#F1" type="variation-absent"/>
+          </app>
+        </stage>
+        <stage xml:lang="spa" xml:id="ls014xq_spa" corresp="#ls014xq_eng">
+          Salen Rosencrantz y Guildenstern.
+        </stage>
+
+        <sp who="#claudius" xml:lang="eng" xml:id="ls015xq_eng" corresp="#ls015xq_spa">
+          <speaker>King Claudius</speaker>
+          <lg>
+            <l>Sweet Gertrude, leave us two,</l>
+            <l>For we have closely sent for Hamlet hither,</l>
+            <l>That he, as 'twere by accident, may here</l>
+            <l>Affront Ophelia.</l>
+            <l>Her father and myself,
+              <app>
+                      <lem>(lawful efpials)</lem>
+            <rdg wit="#F1" type="variation-absent"/>
+              </app>
+            </l>
+                <app>
+                  <lem>We'll so bestow ourselves that, seeing unseen,</lem>
+                  <rdg wit="#F1" type="variation-substance">Will so bestow ourselves, that seeing unseen,</rdg>
+                </app>
+            <l>We may of their encounter frankly judge,</l>
+            <l>And gather by him, as he is behaved,</l>
+            <l>If't be th'affliction of his love or no</l>
+            <l>That thus he suffers for.</l>
+          </lg>
+        </sp>
+        <sp who="#claudius" xml:lang="spa" xml:id="ls015xq_spa" corresp="#ls015xq_eng">
+          <speaker>Rey Claudio</speaker>
+          <lg>
+            <l>Dulce Gertrudis, dejanos también,</l>
+            <l>Pues hemos enviado a buscar a Hamlet,</l>
+            <l>Para que, como por casualidad, se encuentre aquí</l>
+            <l>Enfrentandose a Ofelia.</l>
+            <l>Su padre y yo,</l>
+            <l>Nos dedicaremos a observar sin ser vistos,</l>
+            <l>Para poder juzgar con franqueza su encuentro,</l>
+            <l>Y deducir por su comportamiento,</l>
+            <l>Si es la aflicción de su amor o no</l>
+            <l>Lo que lo hace sufrir así.</l>
+          </lg>
+        </sp>
+        <sp who="#gertrude" xml:lang="eng" xml:id="ls016xq_eng" corresp="#ls016xq_spa">
+          <speaker>Queen Gertrude</speaker>
+          <lg>
+            <l>And for your part, Ophelia, I do wish</l>
+            <l>That your good beauties be the happy cause</l>
+            <l>Of Hamlet's wildness: so shall I hope your virtues</l>
+            <l>Will bring him to his wonted way again,</l>
+            <l>To both your honours.</l>
+          </lg>
+        </sp>
+        <sp who="#gertrude" xml:lang="spa" xml:id="ls016xq_spa" corresp="#ls016xq_eng">
+          <speaker>Reina Gertrudis</speaker>
+          <lg>
+            <l>Les obedeceré.</l>
+            <l>Y en cuanto a ti, Ofelia, deseo</l>
+            <l>Que tu belleza sean la feliz causa</l>
+            <l>De la locura de Hamlet.  Así que es pero que vuestras virtudes</l>
+            <l>Le devuelvan a su camino habitual,</l>
+            <l>Para honor de ambos.</l>
+          </lg>
+        </sp>
+
+        <sp who="#ophelia" xml:lang="eng" xml:id="ls017xq_eng" corresp="#ls017xq_spa">
+          <speaker>Ophelia</speaker>
+          <l>Madam, I wish it may.</l>
+        </sp>
+        <sp who="#ophelia" xml:lang="spa" xml:id="ls017xq_spa" corresp="#ls017xq_eng">
+          <speaker>Ofelia</speaker>
+          <l>Eso espero, señora.</l>
+        </sp>
+
+        <sp who="#polonius" xml:lang="eng" xml:id="ls018xq_eng" corresp="#ls018xq_spa">
+          <speaker>Polonius</speaker>
+          <lg>
+            <l>Ophelia, walk you here.--Gracious, so please you,</l>
+            <l>We will bestow ourselves.</l>
+            <l>Read on this book,</l>
+            <l>That show of such an exercise may color</l>
+            <l>Your lowliness. We are oft too blame in this,</l>
+            <l>'Tis too much proved, that with devotion's visage</l>
+            <l>And pious action we do sugar
+                              <app>
+                  <lem>Sugar</lem>
+                  <rdg wit="#F1" type="variation-substance">furge</rdg>
+                </app> o'er</l>
+            <l>The devil himself.</l>
+          </lg>
+        </sp>
+        <sp who="#polonius" xml:lang="spa" xml:id="ls018xq_spa" corresp="#ls018xq_eng">
+          <speaker>Polonio</speaker>
+          <lg>
+            <l>Ofelia, ven aquí.--Por favor, si le place,</l>
+            <l>Nos pondremos a su disposición.</l>
+            <l> Lee este libro,</l>
+            <l>Que muestra un ejercicio tal que puede adornar</l>
+            <l>Tu humildad. A Menudo somos culpables de esto,</l>
+            <l>Está más que demostrado que con apariencia de devoción</l>
+            <l>Y acciones piadosas endulzamos</l>
+            <l>Al mismísimo diablo.</l>
+          </lg>
+        </sp>
+              <sp who="#claudius" xml:lang="eng" xml:id="ls022xq_eng" corresp="#ls022xq_spa">
+          <speaker>King Claudius</speaker>
+          <stage>[Aside]</stage>
+          <lg>
+            <l>Oh, 'tis too true!</l>
+            <l>How smart a lash that speech doth give my conscience!<app>
+              <lem>!</lem>
+              <rdg wit="#f1" type="variation-orthography">?</rdg>
+            </app></l>
+            <l>The harlot's cheek, beautied with plast'ring art,</l>
+            <l>Is not more ugly to the thing that helps it</l>
+            <l>Than is my deed to my most painted word.</l>
+            <l>Oh, heavy burden!</l>
+          </lg>
+        </sp>
+        <sp who="#claudius" xml:lang="spa" xml:id="ls022xq_spa" corresp="#ls022xq_eng">
+          <speaker> Rey Claudio</speaker>
+          <stage>[Aparte]</stage>
+          <lg>
+            <l>¡Oh, demasiado cierto!</l>
+            <l>¡Qué fuerte latigazo le da ese discurso a mi conciencia!</l>
+            <l>La mejilla de la ramera, embellecida con el arte del maquillaje,</l>
+            <l>No es más fea en relación con lo que la ayuda</l>
+            <l>que mi acto respecto a mi palabra más adornada.</l>
+            <l>¡Oh, pesada carga!</l>
+          </lg>
+        </sp>
+
+        <stage xml:lang="eng" xml:id="ls023xq_eng" corresp="#ls023xq_spa">
+          <app xml:id="exeunt-q2">
+          <lem>Enter Hamlet.</lem>
+           <rdg wit="#F1" type="variation-absent"/></app>
+        </stage>
+        <stage xml:lang="spa" xml:id="ls023xq_spa" corresp="#ls023xq_eng">
+          [Entra Hamlet]
+        </stage>
+
+        <sp who="#polonius" xml:lang="eng" xml:id="ls024xq_eng" corresp="#ls024xq_spa">
+          <speaker>Polonius</speaker>
+          <p>I hear him coming. Withdraw, my lord.</p>
+        </sp>
+        <sp who="#polonius" xml:lang="spa" xml:id="ls024xq_spa" corresp="#ls024xq_eng">
+          <speaker>Polonio</speaker>
+          <p>Lo escucho venir. Retirese, mi lord.</p>
+        </sp>
+
+        <app xml:id="exeunt-f1" prev="#exeunt-q2">
+          <lem n="exeunt-marker"/>
+           <rdg wit="#F1" type="variation-present">[Enter Hamlet.]</rdg></app>
+
+        <stage xml:lang="eng" xml:id="ls025xq_eng" corresp="#ls025xq_spa">
+          [The King and Polonius conceal themselves.]
+        </stage>
+        <stage xml:lang="spa" xml:id="ls025xq_spa" corresp="#ls025xq_eng">
+          [El rey y Polonio se ocultan.]
+        </stage>
+
+        <sp who="#hamlet" xml:lang="eng" xml:id="ls026xq_eng" corresp="#ls026xq_spa">
+          <speaker>Hamlet</speaker>
+          <lg>
+            <l>To be, or not to be, that is the question,</l>
+            <l>Whether 'tis nobler in the mind to suffer</l>
+            <l>The slings and arrows of outrageous fortune,</l>
+            <l>Or to take arms against a sea of troubles,</l>
+            <l>And by opposing end them. To die, to sleep--</l>
+            <l>No more--and by a sleep to say we end</l>
+            <l>The heartache and the thousand natural shocks</l>
+            <l>That flesh is heir to; 'tis a consummation</l>
+            <l>Devoutly to be wished. To die, to sleep;</l>
+            <l>To sleep, perchance to dream. Ay, there's the rub,</l>
+            <l>For in that sleep of death what dreams may come</l>
+            <l>When we have shuffled off this mortal coil</l>
+            <l>Must give us pause. There's the respect</l>
+            <l>That makes calamity of so long life.</l>
+            <l>For who would bear the whips and scorns of time,</l>
+            <l>Th'oppressor's wrong, the proud man's contumely,</l>
+            <l>The pangs of despised love, the law's delay,</l>
+            <l>The insolence of office, and the spurns</l>
+            <l>That patient merit of th'unworthy takes,</l>
+            <l>When he himself might his quietus make</l>
+            <l>With a bare bodkin? Who would fardels bear,</l>
+            <l>To grunt and sweat under a weary life,</l>
+            <l>But that the dread of something after death,</l>
+            <l>The undiscovered country from whose bourn</l>
+            <l>No traveler returns, puzzles the will,</l>
+            <l>And makes us rather bear those ills we have</l>
+            <l>Than fly to others that we know not of.</l>
+            <l>Thus conscience does make cowards,<app>
+                <lem n="missing-marker"/>
+                <rdg wit="#F1" type="variation-present">of us all</rdg>
+              </app>
+              </l>
+            <l>And thus the native hue of resolution</l>
+            <l>Is sicklied o'er with the pale cast of thought,</l>
+            <l>And enterprises of great pitch and moment</l>
+            <l>With this regard their currents turn awry</l>
+            <l>And lose the name of action. Soft you now,</l>
+            <l>The fair Ophelia<app>
+              <lem>!</lem>
+              <rdg wit="#f1" type="variation-orthography">?</rdg>
+            </app>--Nymph, in thy orisons</l>
+            <l>Be all my sins remembered.</l>
+          </lg>
+        </sp>
+        <sp who="#hamlet" xml:lang="spa" xml:id="ls026xq_spa" corresp="#ls026xq_eng">
+          <speaker>Hamlet</speaker>
+          <lg>
+            <l>Ser o no ser, esa es la cuestión.</l>
+            <l>¿Es más noble sufrir en la mente</l>
+            <l>los golpes y flechazos de la fortuna adversa,</l>
+            <l>o tomar las armas contra un mar de problemas</l>
+            <l>y, oponiéndose a ellos, acabar con ellos? Morir, dormir--</l>
+            <l>Nada más-- Y decir que con el sueño acabamos</l>
+            <l>El dolor y los mil golpes naturales</l>
+            <l>Que la carne hereda; es una consumación</l>
+            <l>Que se debe desear devotamente. Morir, dormir;</l>
+            <l>Dormir, tal vez soñar.  Ay, ahí está el problema,</l>
+            <l>Porque en ese sueño de muerte, qué sueños pueden venir</l>
+            <l>Cuando hayamos dejado atrás esta mortalidad</l>
+            <l>Debe hacernos reflexionar. Hay un respeto</l>
+            <l>Que convierte en calamidad una vida tan larga.</l>
+            <l>¿Quién soportaría los azotes y los desprecios del tiempo,</l>
+            <l>Las injusticias del opresor, los insultos del orgulloso,</l>
+            <l>Los tormentos del amor despreciado, la lentitud de la ley,</l>
+            <l>La insolencia del poder y los desaires</l>
+            <l>que el mérito paciente recibe del indigno,</l>
+            <l>cuando él mismo podría poner fin a su vida</l>
+            <l>con una simple daga? ¿Quién soportaría fardels,</l>
+            <l>Gruñir y sudar bajo una vida agotadora,</l>
+            <l>Si no fuera por el temor a algo después de la muerte,</l>
+            <l>El país desconocido desde cuyo límite</l>
+            <l>Ningún viajero regresa, desconcierta la voluntad,</l>
+            <l>Y nos hace soportar los males que tenemos</l>
+            <l>Antes que volar hacia otros que desconocemos.</l>
+            <l>Así la conciencia hace cobardes,</l>
+            <l>Y así el color natural de la resolución</l>
+            <l>Se ve empañado por el pálido matiz del pensamiento,</l>
+            <l>Y las empresas de gran envergadura y trascendencia</l>
+            <l>Con esta consideración, su curso se desvía</l>
+            <l>Y pierden el nombre de acción.  Suave ahora,</l>
+            <l>¡La bella Ofelia! ¡Ninfa, en tus oraciones</l>
+            <l>recuerda todos mis pecados!</l>
+          </lg>
+        </sp>
+
+        <sp who="#ophelia" xml:lang="eng" xml:id="ls027xq_eng" corresp="#ls027xq_spa">
+          <speaker>Ophelia</speaker>
+          <p>Good my lord, How does your honor for this many a day?</p>
+        </sp>
+        <sp who="#ophelia" xml:lang="spa" xml:id="ls027xq_spa" corresp="#ls027xq_eng">
+          <speaker>Ofelia</speaker>
+          <lg>
+            <l>Buen lord mío,</l>
+            <l>¿Cómo se encuentra después de tantos días?</l>
+          </lg>
+        </sp>
+
+        <sp who="#hamlet" xml:lang="eng" xml:id="ls028xq_eng" corresp="#ls028xq_spa">
+          <speaker>Hamlet</speaker>
+          <l>I humbly thank you <app>
+                  <lem>Well</lem>
+                  <rdg wit="#F1" type="variation-substance">: well, well, well.</rdg>
+                </app></l>
+        </sp>
+        <sp who="#hamlet" xml:lang="spa" xml:id="ls028xq_spa" corresp="#ls028xq_eng">
+          <speaker>Hamlet</speaker>
+          <p>Te lo agradezco humildemente.</p>
+        </sp>
+
+        <sp who="#ophelia" xml:lang="eng" xml:id="ls029xq_eng" corresp="#ls029xq_spa">
+          <speaker>Ophelia</speaker>
+          <lg>
+            <l>My lord, I have remembrances of yours</l>
+            <l>That I have longèd long to redeliver.</l>
+            <l>I pray you now receive them.</l>
+          </lg>
+        </sp>
+        <sp who="#ophelia" xml:lang="spa" xml:id="ls029xq_spa" corresp="#ls029xq_eng">
+          <speaker>Ofelia</speaker>
+          <lg>
+            <l>Mi lord, tengo recuerdos vuestros</l>
+            <l>que he anhelado devolveros durante mucho tiempo.</l>
+            <l>Ruego que ahora los recibas.</l>
+          </lg>
+        </sp>
+
+        <sp who="#hamlet" xml:lang="eng" xml:id="ls030xq_eng" corresp="#ls030xq_spa">
+          <speaker>Hamlet</speaker>
+          <p>No,
+            <app>
+                  <lem>not I.</lem>
+                  <rdg wit="#F1" type="variation-substance">no,</rdg>
+                </app> I never gave you aught.</p>
+        </sp>
+        <sp who="#hamlet" xml:lang="spa" xml:id="ls030xq_spa" corresp="#ls030xq_eng">
+          <speaker>Hamlet</speaker>
+          <p>No, yo no. Nunca te di nada.</p>
+        </sp>
+
+        <sp who="#ophelia" xml:lang="eng" xml:id="ls031xq_eng" corresp="#ls031xq_spa">
+          <speaker>Ophelia</speaker>
+          <lg>
+            <l>My honored lord, you know right well you did,</l>
+            <l>And with them words of so sweet breath composed</l>
+            <l>As made <app><lem>these</lem>
+                  <rdg wit="#F1" type="variation-substance">the</rdg> </app>
+               things more rich. </l> <app> <lem>Their perfume lost,</lem>
+                  <rdg wit="#F1" type="variation-substance">then perfume left:</rdg> </app>
+            <l>Take these again, for to the noble mind</l>
+            <l>Rich gifts wax poor when givers prove unkind,</l>
+            <l>There, my lord.</l>
+          </lg>
+        </sp>
+        <sp who="#ophelia" xml:lang="spa" xml:id="ls031xq_spa" corresp="#ls031xq_eng">
+          <speaker>Ofelia</speaker>
+          <lg>
+            <l>Mi honorable señor, bien sabéis que así fue,</l>
+            <l>y con palabras tan dulces y compuestas</l>
+            <l>que hacían estas cosas más ricas. Su perfume perdido,</l>
+            <l>Toma estos de nuevo, pues para la mente noble</l>
+            <l>Los ricos regalos empobrecen cuando los donantes se muestran crueles,</l>
+            <l>Toma, mi señor.</l>
+          </lg>
+        </sp>
+
+        <stage xml:lang="eng" xml:id="ls032xq_eng" corresp="#ls032xq_spa">
+          <app><lem>[She offers Hamlet the remembrances.]</lem>
+  <rdg wit="#F1" type="variation-absent"/></app>
+        </stage>
+        <stage xml:lang="spa" xml:id="ls032xq_spa" corresp="#ls032xq_eng">
+          [Le ofrece a Hamlet los recuerdos.]
+        </stage>
+
+        <sp who="#hamlet" xml:lang="eng" xml:id="ls033xq_eng" corresp="#ls033xq_spa">
+          <speaker>Hamlet</speaker>
+          <lg>
+            <l>Ha, ha! Are you honest?</l>
+          </lg>
+        </sp>
+        <sp who="#hamlet" xml:lang="spa" xml:id="ls033xq_spa" corresp="#ls033xq_eng">
+          <speaker>Hamlet</speaker>
+          <p>¡Ja, ja! ¿Eres honesta?</p>
+        </sp>
+
+        <sp who="#ophelia" xml:lang="eng" xml:id="ls034xq_eng" corresp="#ls034xq_spa">
+          <speaker>Ophelia</speaker>
+          <p>My lord?</p>
+        </sp>
+        <sp who="#ophelia" xml:lang="spa" xml:id="ls034xq_spa" corresp="#ls034xq_eng">
+          <speaker>Ofelia</speaker>
+          <p>¿Mi lord?</p>
+        </sp>
+
+        <sp who="#hamlet" xml:lang="eng" xml:id="ls035xq_eng" corresp="#ls035xq_spa">
+          <speaker>Hamlet</speaker>
+          <p>Are you fair?</p>
+        </sp>
+        <sp who="#hamlet" xml:lang="spa" xml:id="ls035xq_spa" corresp="#ls035xq_eng">
+          <speaker>Hamlet</speaker>
+          <p>¿Eres justa?</p>
+        </sp>
+
+        <sp who="#ophelia" xml:lang="eng" xml:id="ls036xq_eng" corresp="#ls036xq_spa">
+          <speaker>Ophelia</speaker>
+          <p>What means your lordship?</p>
+        </sp>
+        <sp who="#ophelia" xml:lang="spa" xml:id="ls036xq_spa" corresp="#ls036xq_eng">
+          <speaker>Ofelia</speaker>
+          <p>¿Qué quiere decir, señor?</p>
+        </sp>
+
+        <sp who="#hamlet" xml:lang="eng" xml:id="ls037xq_eng" corresp="#ls037xq_spa">
+          <speaker>Hamlet</speaker>
+          <lg>
+            <l>That if you be honest and fair,<app>
+  <lem n="missing-marker"/>
+  <rdg wit="#F1" type="variation-present">your Honefty</rdg>
+</app>
+ should admit no discourse to your beauty.</l>
+          </lg>
+        </sp>
+        <sp who="#hamlet" xml:lang="spa" xml:id="ls037xq_spa" corresp="#ls037xq_eng">
+          <speaker>Hamlet</speaker>
+          <p>Que si eres honesta y justa, no debes admitir ningún discurso sobre tu belleza.</p>
+        </sp>
+
+        <sp who="#ophelia" xml:lang="eng" xml:id="ls038xq_eng" corresp="#ls038xq_spa">
+          <speaker>Ophelia</speaker>
+          <p>Could beauty, my lord, have better commerce than with <app>
+          <lem n="missing-marker"/>
+          <rdg wit="#F1" type="variation-present">your</rdg></app>
+        honesty?</p>
+        </sp>
+        <sp who="#ophelia" xml:lang="spa" xml:id="ls038xq_spa" corresp="#ls038xq_eng">
+          <speaker>Ofelia</speaker>
+          <p>¿Podría la belleza, mi lord, tener mejor compañía que la honestidad?</p>
+        </sp>
+
+        <sp who="#hamlet" xml:lang="eng" xml:id="ls039xq_eng" corresp="#ls039xq_spa">
+          <speaker>Hamlet</speaker>
+          <lg>
+            <l>Ay, truly, for the power of beauty will sooner transform honesty from what it is to a bawd than the force of honesty can translate beauty into his likeness. This was sometime a paradox, but now the time gives it proof. I did love you once.</l>
+            <l>You should not have believed me, for virtue cannot so evocutate our old stock but we shall relish of it. I loved you not.</l>
+          </lg>
+        </sp>
+        <sp who="#hamlet" xml:lang="spa" xml:id="ls039xq_spa" corresp="#ls039xq_eng">
+          <speaker>Hamlet</speaker>
+          <lg>
+            <l>Ay, en verdad, pues el poder de la belleza transformará antes la honestidad de lo que es en una alcahueta que la fuerza de la honestidad puede traducir la belleza en su semejanza. Esto era en cierto modo una paradoja, pero ahora el tiempo lo demuestra. Te amé una vez.</l>
+            <l>No deberías haberme creído, pues la virtud no puede evocar tanto nuestro antiguo acervo que no lo saboreemos. No te amaba.</l>
+          </lg>
+        </sp>
+
+        <sp who="#ophelia" xml:lang="eng" xml:id="ls040xq_eng" corresp="#ls040xq_spa">
+          <speaker>Ophelia</speaker>
+          <p>I was the more deceived.</p>
+        </sp>
+        <sp who="#ophelia" xml:lang="spa" xml:id="ls040xq_spa" corresp="#ls040xq_eng">
+          <speaker>Ofelia</speaker>
+          <p>Yo era la más engañada..</p>
+        </sp>
+
+        <sp who="#hamlet" xml:lang="eng" xml:id="ls041xq_eng" corresp="#ls041xq_spa">
+          <speaker>Hamlet</speaker>
+          <lg>
+            <l>Get thee [to] a nunnery. Why wouldst thou be a breeder of sinners? I am myself indifferent honest, but yet I could accuse me of such things that it were better my mother had not borne me: I am very proud, revengeful, ambitious, with more offenses at my beck than I have thoughts to put them in, imagination to give them shape, or time to act them in. What should such fellows as I do crawling between earth and heaven? <app>
+  <lem n="missing-marker"/><rdg wit="#F1" type="variation-present">of us all</rdg>
+</app>
+ We are arrant knaves; believe none of us. Go thy ways to a nunnery. Where's your father?</l>
+          </lg>
+        </sp>
+        <sp who="#hamlet" xml:lang="spa" xml:id="ls041xq_spa" corresp="#ls041xq_eng">
+          <speaker>Hamlet</speaker>
+          <lg>
+            <l>Vete a un convento. ¿Por qué querrías ser un criador de pecadores?  Yo mismo soy indiferente y honesto, pero aún así podría acusarme de tales cosas que sería mejor que mi madre no me hubiera dado a luz: soy muy orgulloso, vengativo, ambicioso, con más ofensas a mi disposición de las que tengo pensamientos para expresarlas, imaginación para darles forma o tiempo para llevarlas a cabo. ¿Qué deben hacer personas como yo, arrastrándose entre la tierra y el cielo?  Somos unos sinvergüenzas; no creas a ninguno de nosotros. Ve a un convento. ¿Donde está tu padre?</l>
+          </lg>
+        </sp>
+
+        <sp who="#ophelia" xml:lang="eng" xml:id="ls042xq_eng" corresp="#ls042xq_spa">
+          <speaker>Ophelia</speaker>
+          <p>At home, my lord.</p>
+        </sp>
+        <sp who="#ophelia" xml:lang="spa" xml:id="ls042xq_spa" corresp="#ls042xq_eng">
+          <speaker>Ofelia</speaker>
+          <p>En casa, mi lord.</p>
+        </sp>
+
+        <sp who="#hamlet" xml:lang="eng" xml:id="ls043xq_eng" corresp="#ls043xq_spa">
+          <speaker>Hamlet</speaker>
+          <p>Let the doors be shut upon him, that he may play the fool nowhere but in's own house. Farewell.</p>
+        </sp>
+        <sp who="#hamlet" xml:lang="spa" xml:id="ls043xq_spa" corresp="#ls043xq_eng">
+          <speaker>Hamlet</speaker>
+          <p>Que se le cierren las puertas, para que no pueda hacer el tonto en ningún otro sitio que no sea su propia casa. Adiós.</p>
+        </sp>
+
+        <sp who="#ophelia" xml:lang="eng" xml:id="ls044xq_eng" corresp="#ls044xq_spa">
+          <speaker>Ophelia</speaker>
+          <p>Oh, help him, you sweet heavens!</p>
+        </sp>
+        <sp who="#ophelia" xml:lang="spa" xml:id="ls044xq_spa" corresp="#ls044xq_eng">
+          <speaker>Ofelia</speaker>
+          <p>¡Ayudenle, cielos misericordiosos!</p>
+        </sp>
+
+        <sp who="#hamlet" xml:lang="eng" xml:id="ls045xq_eng" corresp="#ls045xq_spa">
+          <speaker>Hamlet</speaker>
+          <lg>
+            <l>If thou dost marry, I'll give thee this plague for thy dowry: be thou as chaste as ice, as pure as snow, thou shalt not escape calumny. Get thee to a nunnery, farewell.</l>
+            <l>Or if thou wilt needs marry, marry a fool, for wise men know well enough what monsters you make of them.</l>
+            <l>To a nunnery go, and quickly too. Farewell.</l>
+          </lg>
+        </sp>
+        <sp who="#hamlet" xml:lang="spa" xml:id="ls045xq_spa" corresp="#ls045xq_eng">
+          <speaker>Hamlet</speaker>
+          <p>Si te casas, te daré esta plaga como dote: por muy casta que seas, por muy pura que seas, no escaparás a la calumnia.</p>
+          <p>Vete a un convento, adiós. O si necesitas casarte, cásate con un tonto, porque los hombres sabios saben muy bien en qué monstruos los conviertes.</p>
+          <p>Vete a un convento, y rápido. Adiós.</p>
+        </sp>
+
+        <sp who="#ophelia" xml:lang="eng" xml:id="ls046xq_eng" corresp="#ls046xq_spa">
+          <speaker>Ophelia</speaker>
+          <p>Heavenly powers restore him!</p>
+        </sp>
+        <sp who="#ophelia" xml:lang="spa" xml:id="ls046xq_spa" corresp="#ls046xq_eng">
+          <speaker>Ofelia</speaker>
+          <p>¡Que los poderes celestiales lo sanen!</p>
+        </sp>
+
+        <sp who="#hamlet" xml:lang="eng" xml:id="ls047xq_eng" corresp="#ls047xq_spa">
+          <speaker>Hamlet</speaker>
+          <lg>
+            <l>I have heard of your paintings well enough. God hath given you one face, and you make yourselves another.</l>
+            <l><app>
+              <lem>you jig and amble</lem>
+              <rdg wit="#F1" type="variation-substance">you gigle, you amble</rdg>
+            </app>
+          and you lisp, you nickname God's creatures, and make your wantonness ignorance.</l>
+            <l>Go to, I'll no more on't; it hath made me mad.</l>
+            <l>I say we will have no mo marriage. Those that are married already, all but one, shall live; the rest shall keep as they are.</l>
+            <l>To a nunnery, go.</l>
+          </lg>
+        </sp>
+        <sp who="#hamlet" xml:lang="spa" xml:id="ls047xq_spa" corresp="#ls047xq_eng">
+          <speaker>Hamlet</speaker>
+          <lg>
+            <l>He oído hablar muy bien de sus pinturas. Dios os ha dado un rostro, y vosotros os hacéis otro.</l>
+            <l>Bailas y paseas, y ceceas, pones apodos a las criaturas de Dios y conviertes tu libertinaje en ignorancia.</l>
+            <l>Vete, no quiero saber nada más; me ha vuelto loco.</l>
+            <l>Yo digo que no habrá más matrimonio. Los que ya están casados, todos menos uno, vivirán; los demás permanecerán como están.</l>
+            <l>Vete a un convento, ve.</l>
+          </lg>
+        </sp>
+
+        <stage xml:lang="eng" xml:id="ls048xq_eng" corresp="#ls048xq_spa">
+          Exit.
+        </stage>
+        <stage xml:lang="spa" xml:id="ls048xq_spa" corresp="#ls048xq_eng">
+          [Sale Hamlet]
+        </stage>
+
+        <sp who="#ophelia" xml:lang="eng" xml:id="ls049xq_eng" corresp="#ls049xq_spa">
+          <speaker>Ophelia</speaker>
+          <lg>
+            <l>Oh, what a noble mind is here o'erthrown!</l>
+            <l>The courtier's, soldier's, scholar's, eye, tongue, sword,</l>
+            <l>Th'expectation and rose of the fair state,</l>
+            <l>The glass of fashion and the mold of form,</l>
+            <l>Th'observed of all observers, quite, quite down,</l>
+            <l>And I, of ladies most deject and wretched,</l>
+            <l>That sucked the honey of his musicked vows,</l>
+            <l>Now see what noble and most sovereign reason</l>
+            <l>Like sweet bells jangled out of time, and harsh,</l>
+            <l>That unmatched form and stature of blown youth</l>
+            <l>Blasted with ecstasy. Oh, woe is me</l>
+            <l>T'have seen what I have seen, see what I see!</l>
+          </lg>
+        </sp>
+        <sp who="#ophelia" xml:lang="spa" xml:id="ls049xq_spa" corresp="#ls049xq_eng">
+          <speaker>Ofelia</speaker>
+          <lg>
+            <l>¡Oh, qué noble mente ha sido derribada aquí!</l>
+            <l>El ojo, la lengua y la espada del cortesano, el soldado y el erudito,</l>
+            <l>La esperanza y la rosa del bello estado,</l>
+            <l>El espejo de la moda y el molde de la forma,</l>
+            <l>El observado de todos los observadores, completamente, completamente abatido,</l>
+            <l>Y yo, la más abatida y desdichada de las damas,</l>
+            <l>Que chupé la miel de sus votos musicales,</l>
+            <l>Ahora veo qué noble y soberana razón</l>
+            <l>Como dulces campanas que suenan fuera de tiempo, y ásperas,</l>
+            <l>Esa forma y estatura sin igual de la juventud perdida</l>
+            <l>Arrasada por el éxtasis. ¡Ay de mí!</l>
+            <l>¡He visto lo que he visto, veo lo que veo!</l>
+          </lg>
+        </sp>
+
+        <stage xml:lang="eng" xml:id="ls050xq_eng" corresp="#ls050xq_spa">
+          Enter King and Polonius [stepping forward from concealment].
+        </stage>
+        <stage xml:lang="spa" xml:id="ls050xq_spa" corresp="#ls050xq_eng">
+          Entran El Rey y Polonio [saliendo de su escondite].
+        </stage>
+
+        <sp who="#claudius" xml:lang="eng" xml:id="ls051xq_eng" corresp="#ls051xq_spa">
+          <speaker>King Claudius</speaker>
+          <lg>
+            <l>Love? His affections do not that way tend,</l>
+            <l>Nor what he spake, though it lacked form a little,</l>
+            <l>Was not like madness. There's something in his soul</l>
+            <l>O'er which his melancholy sits on brood,</l>
+            <l>And I do doubt the hatch and the disclose</l>
+            <l>Will be some danger; which for to prevent,</l>
+            <l>I have in quick determination</l>
+            <l>Thus set it down: he shall with speed to England,</l>
+            <l>For the demand of our neglected tribute.</l>
+            <l>Haply the seas, and countries different,</l>
+            <l>With variable objects, shall expel</l>
+            <l>This something-settled matter in his heart,</l>
+            <l>Whereon his brains still beating puts him thus</l>
+            <l>From fashion of himself. What think you on't?</l>
+          </lg>
+        </sp>
+        <sp who="#claudius" xml:lang="spa" xml:id="ls051xq_spa" corresp="#ls051xq_eng">
+          <speaker>Rey</speaker>
+          <lg>
+            <l>¿Amor? Sus afectos no tienden en ese sentido,</l>
+            <l>ni lo que dijo, aunque carecía un poco de forma,</l>
+            <l>no parecía una locura. Hay algo en su alma</l>
+            <l>sobre lo que se cierne su melancolía,</l>
+            <l>y dudo que la revelación y la divulgación</l>
+            <l>supongan algún peligro; para evitarlo,</l>
+            <l>he tomado una rápida decisión:</l>
+            <l>que parta rápidamente hacia Inglaterra,</l>
+            <l>para reclamar el tributo que hemos descuidado.</l>
+            <l>Quizás los mares y los países diferentes,</l>
+            <l>con objetos variables, expulsen</l>
+            <l>esa materia algo asentada en su corazón,</l>
+            <l>por la cual su cerebro, aún palpitante, lo aleja así</l>
+            <l>de su propia forma.</l>
+            <l>¿Qué te parece?</l>
+          </lg>
+        </sp>
+
+        <sp who="#polonius" xml:lang="eng" xml:id="ls052xq_eng" corresp="#ls052xq_spa">
+          <speaker>Polonius</speaker>
+          <lg>
+            <l>It shall do well. But yet do I believe</l>
+            <l>the origin and commencement of his grief</l>
+            <l>Sprung from neglected love.--How now, Ophelia?</l>
+            <l>You need not tell us what Lord Hamlet said,</l>
+            <l>We heard it all.--My lord, do as you please,</l>
+            <l>But if you hold it fit, after the play</l>
+            <l>Let his queen-mother all alone entreat him</l>
+            <l>To show his grief. Let her be round with him,</l>
+            <l>And I'll be placed (so please you) in the ear</l>
+            <l>Of all their conference. If she find him not,</l>
+            <l>To England send him, or confine him where</l>
+            <l>Your wisdom best shall think.</l>
+          </lg>
+        </sp>
+        <sp who="#polonius" xml:lang="spa" xml:id="ls052xq_spa" corresp="#ls052xq_eng">
+          <speaker>Polonio</speaker>
+          <lg>
+            <l>Lo hará bien. Pero aún así creo</l>
+            <l>que el origen y el comienzo de su dolor</l>
+            <l>provienen de un amor desatendido. ¿Qué pasa, Ofelia?</l>
+            <l>No es necesario que nos cuentes lo que dijo Lord Hamlet,</l>
+            <l>lo hemos oído todo. Mi señor, haz lo que te plazca,</l>
+            <l>pero si lo consideras oportuno, después de la obra,</l>
+            <l>que su madre Reina le suplique en privado</l>
+            <l>que muestre su dolor. Dejad que ella se acerque a él,</l>
+            <l>y yo me colocaré (si os place) cerca del oído</l>
+            <l>de todos los que conversan. Si no lo encuentra,</l>
+            <l>envíelo a Inglaterra o confínelo donde</l>
+            <l>su sabiduría considere más oportuno.</l>
+          </lg>
+        </sp>
+
+        <sp who="#claudius" xml:lang="eng" xml:id="ls053xq_eng" corresp="#ls053xq_spa">
+          <speaker>King Claudius</speaker>
+          <lg>
+            <l>It shall be so;</l>
+            <l>Madness in great ones must not unmatched go.</l>
+          </lg>
+        </sp>
+        <sp who="#claudius" xml:lang="spa" xml:id="ls053xq_spa" corresp="#ls053xq_eng">
+          <speaker>Rey</speaker>
+          <lg>
+            <l> Así será;</l>
+            <l>La locura de los grandes no debe quedar sin parangón.</l>
+          </lg>
+        </sp>
+
+        <stage xml:lang="eng" xml:id="ls054xq_eng" corresp="#ls054xq_spa">
+          Exeunt.
+        </stage>
+        <stage xml:lang="spa" xml:id="ls054xq_spa" corresp="#ls054xq_eng">
+          [Salen]
+        </stage>
+
+      </div>
+    </body>
+  </text>
+</TEI>
