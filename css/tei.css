@@ -1,4 +1,3 @@
-
 body {
     font-family: jura, Times, serif;
     min-height: 100vh;
@@ -38,10 +37,34 @@ tei-stage[lang="eng"] { color: brown; }
 
 
 tei-stage, tei-sp, tei-author, tei-speaker {
+    display: block;
     width: auto;
-    display: inline-block;
     text-align: center;
+    margin: 0.35rem 0;
+    padding: 0;
 }
+
+/* nombre (autor) dentro del speaker */
+tei-speaker > tei-author,
+tei-speaker > .name,
+tei-author {
+    color: #ffd166; /* color para el nombre */
+    font-weight: 700;
+    display: inline;
+    margin-right: .5rem;
+}
+
+/* rol / desk dentro del speaker */
+tei-speaker > tei-role,
+tei-speaker > .role,
+tei-speaker > tei-desk {
+    color: #06d6a0; /* color para el rol */
+    font-style: italic;
+    display: inline;
+}
+
+/* ligera separación entre líneas del cast */
+tei-speaker { line-height: 1.25; }
 
 tei-author {
     color: aquamarine;
@@ -51,3 +74,48 @@ font-variant: small-caps;
 color: blueviolet;}
 tei-stage [lang= "spa"] {color: green;}
 tei-stage [lang= "eng" ] {color: brown;}
+
+/* Cast usando castList / castItem: cada item en su renglón y colores separados */
+castList,
+tei-castList {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 0.6rem auto;
+    padding: 0;
+    text-align: center; /* cambiar a left si prefieres alineación izquierda */
+}
+
+castItem,
+tei-castItem {
+    display: block;
+    padding: 0.35rem 0;
+    margin: 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    line-height: 1.25;
+}
+
+/* nombre del actor */
+castItem > name,
+castItem name,
+tei-castItem > tei-name,
+tei-name {
+    display: inline;
+    color: #ffd166;
+    font-weight: 700;
+    margin-right: .5rem;
+}
+
+/* rol / desk */
+castItem > role,
+castItem role,
+tei-castItem > tei-role,
+tei-role,
+.role {
+    display: inline;
+    color: #06d6a0;
+    font-style: italic;
+}
+
+/* fallback para elementos no exactos: mantener cada elemento en su línea */
+castList > * { display: block; }
